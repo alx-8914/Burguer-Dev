@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    background-image: url('./assets/4486964.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container-buttons {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background-color: #e3ed44e3;
+    border: none;
+    border-radius: 5px;
+    color: #000000;
+    padding: 9px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 110px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: center;
+}
+
+li {
+    border: 1px solid #4f3f34;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #4f3f34a6;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+p {
+    color: #efa904;
+    text-shadow: black 0.1em 0.1em 0.1em;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #e13b3b;
+}
+
+@media screen and (max-width:480px){
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    }
+
+    .container-buttons {
+        width: 100%;
+        margin-bottom: 20px;
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+
+    .container-buttons button {
+        width: 70px;
+        font-size: xx-small;
+    }
+
+
+}
